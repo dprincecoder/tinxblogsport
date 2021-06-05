@@ -1,0 +1,44 @@
+.editor-main-text{
+    margin: 2rem 0;
+    text-align: justify;
+}
+.editor-main-text p{
+    font-size: 1.5rem;
+}
+.editor-main-text b{
+    font-size: 1.2rem;
+}
+.container{
+    padding: 4rem;
+}
+.editor-name{
+    font-size: 2rem;
+    color: #037fff;
+    margin: 1rem;
+}
+
+.editor-image{
+    margin: 1rem 0;
+}
+
+.editor-text{
+    font-size: 1.3rem;
+}
+
+.editor-list{
+    margin: .7rem 1rem;
+}
+
+.editor-item{
+    padding: .5rem;
+}
+
+.editor-link{
+    color: red;
+}
+
+.go-up{
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}

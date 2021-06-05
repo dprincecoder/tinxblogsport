@@ -1,0 +1,94 @@
+.resume-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 700px) {
+    .resume-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 1250px) {
+    .resume-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.resume-img{
+    width: 700px;
+
+}
+@media screen and (max-width: 700px) {
+    .resume-img {
+       width: 500px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .resume-img {
+        width: 500px;
+    }
+}
+
+
+.resume-name{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+@media screen and (max-width: 700px) {
+    .resume-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+     .resume-name {
+         font-size: 1.8rem;
+     }
+}
+
+.resume-text{
+    font-size: 1.8rem;
+}
+@media screen and (max-width: 700px) {
+   .resume-text {
+       font-size: 1.3rem;
+   }
+}
+
+@media screen and (max-width: 1250px) {
+    .resume-text {
+        font-size: 1.3rem;
+    }
+}
+
+
+.resume-list{
+    margin: 1rem 0;
+}
+
+.resume-item{
+    font-size: 1.3rem;
+}
+
+.resume-bar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+@media screen and (max-width: 700px) {
+    .resume-bar {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .resume-bar{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,118 @@
+.sample{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 700px) {
+    .sample{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 1224px) {
+    .sample{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.container{
+    padding: 2rem;
+}
+.sample-img{
+    width: 700px;
+}
+@media screen and (max-width: 700px) {
+    .sample-img{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sample-img{
+        width: 500px;
+    }
+}
+
+.sample-text{
+    font-size: 2rem;
+    margin: 3rem;
+    text-align: justify;
+}
+@media screen and (max-width: 700px) {
+    .sample-text {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sample-text {
+        font-size: 1.5rem;
+    }
+}
+.libraries-cover{
+
+    margin-top: 2rem;
+    background: url('../images/images\ \(1\).jpeg') center no-repeat;
+    background-size: cover;
+}
+.libraries-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+}
+@media screen and (max-width: 700px) {
+    .libraries-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .libraries-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.library-box{
+    background: rgb(238, 230, 216);
+    text-align: center;
+    box-shadow: 3px 4px 6px 2px black;
+    margin-top: 2rem;
+    border-top: 8px solid rgb(184, 71, 71);
+    border-radius: 15px 15px 0 0;
+}
+.library-box:hover{
+    border-top: 8px solid #0037ff;
+}
+
+.library-name{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: #037fff;
+}
+
+.library-list{
+    list-style: none;
+}
+
+.library-item{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.library-link{
+    color: black;
+}
+.library-link:hover{
+    color: #037fff;
+
+    transition: all .3s ease-in;
+}
+.library-item:hover{
+    animation: .4s grow forwards; 
+    transition: all .3s ease-in;
+}   
+@keyframes grow {
+    
+    from{
+        transform: scale(.8);
+    }
+    to{
+        transform: scale(1.6);
+    }
+}
