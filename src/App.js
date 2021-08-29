@@ -1,33 +1,58 @@
-import './App.css';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import HomePage from './pages/HomePage';
-import Tools from './pages/Tools'
-import Library from './pages/Library';
-import Developers from './components/Developers';
-import Resume from './components/Resume';
+import React from 'react'
+import './App.css'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Topbar from './components/topbar/Topbar';
+import Home from './pages/home/Home';
+import SingleBlog from './components/singleblog/SingleBlog';
+import Contact from './pages/contact/Contact';
+import About from "./pages/about/About";
+import Faq from "./pages/faq/Faq";
+import Dashboard from "./pages/dashboard/Dashboard";
 
-function App() {
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <Router>
-        <Route path="/" exact component="HomePage">
-          <HomePage/>
-        </Route>
-          <Route path="/tools" component="Tools">
-          <Tools/>
-        </Route>
-          <Route path="/library" component="library">
-          <Library/>
-        </Route>
-          <Route path="/developers" component="developers">
-          <Developers/>
-        </Route>
-          <Route path="/resume" component="resume">
-          <Resume/>
-        </Route>
-     </Router>
-    </div>
-  );
+		<div className="App">
+			<Router>
+				<Topbar />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route path="/blog/:blogId">
+						<SingleBlog />
+					</Route>
+					<Route path="/about">
+						<About />
+					</Route>
+					<Route path="/contact">
+						<Contact />
+					</Route>
+					<Route path="/faq">
+						<Faq />
+					</Route>
+					<Route path="/dashboard">
+						<Dashboard />
+					</Route>
+					<Route path="/favourite">
+						<Faq />
+					</Route>
+					<Route path="/login">
+						<Faq />
+					</Route>
+					<Route path="/register">
+						<Faq />
+					</Route>
+					<Route path="/publish">
+						<Faq />
+					</Route>
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
-export default App;
+export default App

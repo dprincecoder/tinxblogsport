@@ -1,0 +1,52 @@
+.home{
+  /* display: flex; */
+    width: 100%;
+    position: relative;
+}
+
+.homeContent{
+    display: flex;
+    margin-left: 190px;
+}
+
+.sidebar{
+  background-color: #e1e1d0;
+  width: 15rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebarContent{
+    margin-top: 4rem;
+  }
+  
+  .allBlogs{
+    background-color: red;
+    width: 800px;
+  }
+  
+  .allBlogsContent{
+  padding-left: 6rem;
+    padding-top: 4rem;
+}
+
+.trending{
+  width: 100%;
+  background-color: blue;
+}
+
+.tredingContent{
+    padding: 4rem 1rem 0 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .home{
+    flex-direction: column;
+  }
+
+  .third{
+      display: none;
+  }
+}

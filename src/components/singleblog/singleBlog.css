@@ -1,0 +1,12 @@
+.singleBlog{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+}
+
+.singleBlogContainer{
+    padding-top: 5rem;
+}
