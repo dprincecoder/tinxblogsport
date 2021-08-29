@@ -6,11 +6,11 @@
 
 .homeContent{
     display: flex;
-    margin-left: 190px;
+    margin-left: 225px;
 }
 
 .sidebar{
-  background-color: #e1e1d0;
+  padding: 5rem 1rem 0 1rem;
   width: 15rem;
   position: fixed;
   top: 0;
@@ -19,7 +19,9 @@
 }
 
 .sidebarContent{
-    margin-top: 4rem;
+  padding-top: 5px;
+    background-color: white;
+    height: 90%;
   }
   
   .allBlogs{
@@ -41,12 +43,36 @@
     padding: 4rem 1rem 0 1rem;
 }
 
-@media screen and (max-width: 700px) {
-  .home{
-    flex-direction: column;
-  }
+.sidebarUserDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e1e1d0;
+}
 
-  .third{
-      display: none;
-  }
+.sidebarUserDetailsAvatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid rgb(170, 170, 170);
+    margin-left: 1rem;
+}
+
+.sidebarUserDetailsName{
+  padding-top: 10px;
+  color: #037fff;
+  text-transform: uppercase;
+}
+
+.sidebarUserOpt{
+  padding: 1rem;
+  border-bottom: 2px solid #e1e1d0;
+}
+
+.sidebarUserOptItem{
+  color: #037fff;
+  list-style: none;
 }

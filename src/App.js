@@ -8,6 +8,13 @@ import Contact from './pages/contact/Contact';
 import About from "./pages/about/About";
 import Faq from "./pages/faq/Faq";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Favorite from "./pages/favorite/Favorite";
+import Login from './pages/login/Login';
+import Register from "./pages/register/Register";
+import Publish from "./pages/publish/Publish";
+
+
+
 
 
 
@@ -37,17 +44,17 @@ const App = () => {
 					<Route path="/dashboard">
 						<Dashboard />
 					</Route>
-					<Route path="/favourite">
-						<Faq />
+					<Route path="/favorite">
+						<Favorite/>
 					</Route>
 					<Route path="/login">
-						<Faq />
+						<Login />
 					</Route>
 					<Route path="/register">
-						<Faq />
+						<Register />
 					</Route>
 					<Route path="/publish">
-						<Faq />
+						<Publish />
 					</Route>
 				</Switch>
 			</Router>
