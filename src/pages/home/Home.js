@@ -12,7 +12,7 @@ import img from "./PhotoGrid_Plus_1605606730565.png";
 
 const Home = () => {
 	return (
-		<div className="home">
+		<div className="home ">
 			<div className="sidebar">
 				<div className="sidebarContent">
 					<div className="sidebarUserDetails">
@@ -26,47 +26,37 @@ const Home = () => {
 					<div className="sidebarUserOpt">
 						<ul className="sidebarUserOptList">
 							<Link to="/users/2423/favorite">
-								<li className="sidebarUserOptItem">
-									Favorite{" "}
-									<span>
-										<FavoriteRounded />
-									</span>
-								</li>
+								<li className="sidebarUserOptItem">Favorite </li>
+								<span className="sidebarUserIcon">
+									<FavoriteRounded />
+								</span>
 							</Link>
 							<Link to="/users/2423/dashboard">
-								<li className="sidebarUserOptItem">
-									Dashboard{" "}
-									<span>
-										<DashboardIcon />
-									</span>
-								</li>
+								<li className="sidebarUserOptItem">Dashboard </li>
+								<span className="sidebarUserIcon">
+									<DashboardIcon />
+								</span>
 							</Link>
 							<Link to="/users/2423/publish">
-								<li className="sidebarUserOptItem">
-									Publish{" "}
-									<span>
-										<CreateIcon />
-									</span>
-								</li>
+								<li className="sidebarUserOptItem">Publish </li>
+								<span className="sidebarUserIcon">
+									<CreateIcon />
+								</span>
 							</Link>
 						</ul>
 					</div>
 					<div className="sidebarAccount">
 						<Link to="/login">
-							<h3 className="sidebarAccountLogin">
-								Login{" "}
-								<span>
-									<FaceIcon />
-								</span>
-							</h3>
+							<h3 className="sidebarAccountLogin">Login </h3>
+							<span className="sidebarUserIcon">
+								<FaceIcon />
+							</span>
 						</Link>
 						<Link to="/register">
-							<h3 className="sidebarAccountLogin">
-								Register{" "}
-								<span>
-									<FiberNewIcon />
-								</span>
-							</h3>
+							<h3 className="sidebarAccountLogin">Register </h3>
+							<span className="sidebarUserIcon">
+								<FiberNewIcon />
+							</span>
 						</Link>
 					</div>
 				</div>
@@ -78,7 +68,9 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="trending">
-					<div className="tredingContent">treding</div>
+					<div className="tredingContent">
+						treding
+						</div>
 				</div>
 			</div>
 		</div>

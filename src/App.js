@@ -15,11 +15,6 @@ import Publish from "./pages/publish/Publish";
 
 
 
-
-
-
-
-
 const App = () => {
   return (
 		<div className="App">

@@ -1,5 +1,4 @@
 .home{
-  /* display: flex; */
     width: 100%;
     position: relative;
 }
@@ -7,7 +6,14 @@
 .homeContent{
     display: flex;
     margin-left: 225px;
+    transition: .5s;
+    transition-property: margin-left;
 }
+
+.hideSidebar .homeContent{
+  margin-left: 80px;
+}
+
 
 .sidebar{
   padding: 5rem 1rem 0 1rem;
@@ -16,6 +22,12 @@
   top: 0;
   left: 0;
   height: 100vh;
+  transition: .5s;
+   transition-property: left;
+}
+
+.hideSidebar .sidebar{
+  left: -11rem;
 }
 
 .sidebarContent{
@@ -23,25 +35,6 @@
     background-color: white;
     height: 90%;
   }
-  
-  .allBlogs{
-    background-color: red;
-    width: 800px;
-  }
-  
-  .allBlogsContent{
-  padding-left: 6rem;
-    padding-top: 4rem;
-}
-
-.trending{
-  width: 100%;
-  background-color: blue;
-}
-
-.tredingContent{
-    padding: 4rem 1rem 0 1rem;
-}
 
 .sidebarUserDetails{
   display: flex;
@@ -75,4 +68,81 @@
 .sidebarUserOptItem{
   color: #037fff;
   list-style: none;
+  padding: 1rem 0 .5rem 0;
+}
+
+.sidebarUserOptItem:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.2)
+}
+
+.sidebarUserOptList{
+  margin-left: 3rem;
+}
+
+.sidebarUserIcon{
+  color: #037fff;
+  display: none;
+}
+
+.sidebarAccount > a{
+  color: #037fff;
+}
+
+.sidebarAccountLogin{
+  margin-left: 3rem;
+  padding: 1rem 0;
+}
+
+  .allBlogs{
+    max-width: 800px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .allBlogsContent{
+    /* padding-left: 1rem; */
+    /* padding-top: .5rem; */
+    background-color: #fff;
+    width: 600px;
+    height: 80vh;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.trending{
+  width: 100%;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  position: fixed;
+  right: 1.5rem;
+  height: 100vh;
+  width: 400px;
+  transition: .5s;
+  transition-property: right;
+}
+
+.hideSidebar .trending{
+  right: 8rem;
+}
+
+.tredingContent{
+  background-color: #fff;
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 10px;
+  height: 80%;
+  overflow-y: scroll;
+
+}
+
+
+.tredingContent::-webkit-scrollbar {
+  width: 8px;
+}
+.tredingContent::-webkit-scrollbar-thumb {
+  background-color: #037fff;
+  border-radius: 50px;
+}
+.tredingContent::-webkit-scrollbar-track {
+  background-color: #e1e1d0;
 }
