@@ -68,9 +68,7 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="trending">
-					<div className="tredingContent">
-						treding
-						</div>
+					<div className="tredingContent">treding</div>
 				</div>
 			</div>
 		</div>

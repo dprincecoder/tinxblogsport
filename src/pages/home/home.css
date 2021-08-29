@@ -97,17 +97,16 @@
   .allBlogs{
     max-width: 800px;
     margin-left: 2rem;
-    margin-top: 2rem;
   }
   
   .allBlogsContent{
-    /* padding-left: 1rem; */
-    /* padding-top: .5rem; */
+    margin-top: 4rem;
     background-color: #fff;
     width: 600px;
-    height: 80vh;
+    height: 110vh;
     border-radius: 10px;
     margin-bottom: 1.5rem;
+    object-fit: cover;
 }
 
 .trending{

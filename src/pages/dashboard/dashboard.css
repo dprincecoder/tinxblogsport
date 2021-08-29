@@ -1,0 +1,119 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardWrapper{
+    height: 100%;
+    width: 600px;
+    background-color: #fff;
+    margin-top: 4rem;
+    padding: 20px;
+    /* margin-left: 10rem; */
+}
+
+.dashboardTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboardUpdateTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: lightcoral;
+}
+
+.dashboardPublish{
+    width: 150px;
+    right: 0;
+    border: none;
+    color: #fff;
+    background-color: teal;
+    padding: 5px;
+    top: 5rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.dashboardPublish > h2 {
+    font-size: 1rem;  
+
+}
+
+.dashboardDeleteTitle{
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dashboardForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* .dashboardForm > a {
+    position: absolute;
+    right: 0;
+} */
+
+.dashboardPP{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    
+}
+
+.dashboardPP > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.dashboardPPIcon{
+    position: absolute;
+    bottom: 10px;
+    left: 7rem;
+    widows: 40px;
+    height: 40px;
+    background-color: lightcoral;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.dashboardForm > label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.dashboardForm > input {
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.dashboardForm > input:focus{
+    outline: none;
+}
+
+.dashboardSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}

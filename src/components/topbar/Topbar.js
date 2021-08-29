@@ -9,7 +9,7 @@ const Topbar = () => {
 			<div className="topbar">
 				<div className="topbarLogo">
 					<img src={img} alt="brand logo" className="topbarImg"/>
-					<div className="topbarBrand">TinX BlogSpot</div>
+					<h1 className="topbarBrand">TinX BlogSpot</h1>
 				</div>
 				<div className="topbarItems">
                 <ul className="topbarItemsList">

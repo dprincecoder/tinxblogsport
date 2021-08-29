@@ -1,0 +1,73 @@
+.publish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publishContent{
+    height: 100%;
+    width: 600px;
+    background-color: #fff;
+    margin-top: 4rem;
+    padding: 20px;
+}
+
+.publishImg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.publishForm{
+    position: relative;
+}
+
+.publishFormGroup{
+    display: flex;
+    align-items: center;
+}
+
+.publishIcon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 85, 85);
+    cursor: pointer;
+}
+
+.publishInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.publishInput:focus{
+    outline: none;
+}
+
+.publishText{
+    font-size: 20px;
+    height: 60vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.publishSubmit{
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.publishSubmit:hover{
+    background-color: #037fff;
+}

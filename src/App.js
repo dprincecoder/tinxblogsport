@@ -36,10 +36,10 @@ const App = () => {
 					<Route path="/faq">
 						<Faq />
 					</Route>
-					<Route path="/dashboard">
+					<Route path="/users/:userId/dashboard">
 						<Dashboard />
 					</Route>
-					<Route path="/favorite">
+					<Route path="/users/:blogId/favorite">
 						<Favorite/>
 					</Route>
 					<Route path="/login">
@@ -48,7 +48,7 @@ const App = () => {
 					<Route path="/register">
 						<Register />
 					</Route>
-					<Route path="/publish">
+					<Route path="/users/:userId/publish">
 						<Publish />
 					</Route>
 				</Switch>
